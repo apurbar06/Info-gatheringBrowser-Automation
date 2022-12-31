@@ -1,13 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 import time
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -17,9 +15,12 @@ wait = WebDriverWait(driver, 5)
 driver.get('https://www.morningstar.in/stocks/0p0000bp7x/bse-itc-ltd/overview.aspx')
 time.sleep(10)
 
-SearchTextBox = wait.until(EC.visibility_of_element_located((By.XPATH, '//input[@placeholder="Quote"]')))
-action.move_to_element(SearchTextBox).click().send_keys('HINDUSTAN UNILEVER LTD').perform()
-SearchTextBox.send_keys(Keys.ENTER)
+search_term ='Hindustan Unilever Ltd'
+search_number = '500696'
+sbox = driver.find_element(by=By.XPATH, value='//input[@placeholder="Quote"]')
+sbox.send_keys(search_term)
+time.sleep(5)
+driver.find_element(by=By.XPATH, value="//div[contains(text(),'"+search_number+"')]").click()
 time.sleep(10)
 
 
