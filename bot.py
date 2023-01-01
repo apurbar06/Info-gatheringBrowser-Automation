@@ -52,6 +52,15 @@ time.sleep(10)
 ebitda = driver.find_element(by=By.XPATH, value="(.//table[@class='sal-summary-section__table']/tbody/tr[4]/td[4])").text
 
 
+# Extract the value of fair value
+driver.find_element(by=By.XPATH, value="(.//a[@id='ctl00_ContentPlaceHolder1_ucNavigation_rptNavigation_ctl03_lnkTab'])").click()
+time.sleep(10)
+fair_value = driver.find_element(by=By.XPATH, value="(.//div[@class='sal-columns sal-small-8 sal-medium-12 legend-items']/div)[2]//div[@class='legend-price']/span").text
+
+
+# Extract the value of total yield of TTM
+total_yield_of_ttm = driver.find_element(by=By.XPATH, value="(.//table[@class='mds-table__sal mds-table--fixed-column__sal']/tbody/tr[5]/td[12])").text
+
 
 
 
@@ -65,6 +74,8 @@ print('price_pre_cash_flow: '+ price_pre_cash_flow)
 print('price_pre_sales: '+ price_pre_sales)
 print('price_pre_earnings: '+ price_pre_earnings)
 print('ebitda: '+ ebitda)
+print('fair_value: '+ fair_value)
+print('total_yield_of_ttm: '+ total_yield_of_ttm)
 print()
 print()
 print()
