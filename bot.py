@@ -33,7 +33,26 @@ rating = driver.find_element(by=By.XPATH, value="//div[contains(@class, 'mds-sta
 # Extract the value of price/book
 price_pre_book = driver.find_element(by=By.XPATH, value="(.//ul[@class='small-block-grid-3 large-block-grid-4 sal-component-band-grid']/li)[10]//div[@class='dp-value']").text
 
-    
+
+# Extract the value of price/cash flow
+price_pre_cash_flow = driver.find_element(by=By.XPATH, value="(.//ul[@class='sal-xsmall-block-grid-2 small-block-grid-4']/li)[2]//div[@class='dp-value']").text
+
+
+# Extract the value of price/sales
+price_pre_sales = driver.find_element(by=By.XPATH, value="(.//ul[@class='sal-xsmall-block-grid-2 small-block-grid-4']/li)[3]//div[@class='dp-value']").text
+
+
+# Extract the value of price/earnings
+price_pre_earnings = driver.find_element(by=By.XPATH, value="(.//ul[@class='sal-xsmall-block-grid-2 small-block-grid-4']/li)[4]//div[@class='dp-value']").text
+
+
+# Extract the value of EBITDA
+driver.find_element(by=By.XPATH, value="(.//a[@id='ctl00_ContentPlaceHolder1_ucNavigation_rptNavigation_ctl02_lnkTab'])").click()
+time.sleep(10)
+ebitda = driver.find_element(by=By.XPATH, value="(.//table[@class='sal-summary-section__table']/tbody/tr[4]/td[4])").text
+
+
+
 
 
 print()
@@ -42,6 +61,10 @@ print()
 print()
 print('rating: ' + rating)
 print('price_pre_book: '+ price_pre_book)
+print('price_pre_cash_flow: '+ price_pre_cash_flow)
+print('price_pre_sales: '+ price_pre_sales)
+print('price_pre_earnings: '+ price_pre_earnings)
+print('ebitda: '+ ebitda)
 print()
 print()
 print()
