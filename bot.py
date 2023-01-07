@@ -24,7 +24,7 @@ time.sleep(10)
 
 
 for i in range(len(name)):
-    # print(str(name[i])+" -> "+str(number[i]))
+    print(str(name[i])+" -> "+str(number[i]))
 
     # Search and Enter
     # search_term = str(name[i])
@@ -60,7 +60,10 @@ for i in range(len(name)):
     # Extract the value of fair value
     driver.find_element(by=By.XPATH, value="(.//a[@id='ctl00_ContentPlaceHolder1_ucNavigation_rptNavigation_ctl03_lnkTab'])").click()
     time.sleep(10)
-    fair_value = driver.find_element(by=By.XPATH, value="(.//div[@class='sal-columns sal-small-8 sal-medium-12 legend-items']/div)[2]//div[@class='legend-price']/span").text
+    if(driver.find_element(by=By.XPATH, value="(.//div[@class='sal-columns sal-small-8 sal-medium-12 legend-items']/div)[1]//span").text == 'Fair Value'):
+        fair_value = driver.find_element(by=By.XPATH, value="(.//div[@class='sal-columns sal-small-8 sal-medium-12 legend-items']/div)[1]//div[@class='legend-price']/span").text
+    else:
+        fair_value = driver.find_element(by=By.XPATH, value="(.//div[@class='sal-columns sal-small-8 sal-medium-12 legend-items']/div)[2]//div[@class='legend-price']/span").text
 
     # Extract the value of total yield of TTM
     total_yield_of_ttm = driver.find_element(by=By.XPATH, value="(.//table[@class='mds-table__sal mds-table--fixed-column__sal']/tbody/tr[5]/td[12])").text
