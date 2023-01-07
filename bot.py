@@ -8,10 +8,25 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import pandas as pd
+import openpyxl
+from openpyxl.styles import Font, Alignment
+
+
+# read parameters from file
+with open('parameters.txt') as file:
+    lines = [line.rstrip() for line in file]
+
+_file_name = lines[0]
+_sheet_name = lines[1]
+_row = int(lines[2])
+
+lines[0] = lines[0]+"\n"
+lines[1] = lines[1]+"\n"
+
 
 
 # read excel file
-df = pd.ExcelFile('Order Placement.xlsm').parse('11-12-2022') 
+df = pd.ExcelFile(_file_name).parse(_sheet_name) 
 name=df['Stock Name'].tolist()
 number=df['BSE / NSE Code'].tolist()
 
@@ -23,8 +38,8 @@ driver.get('https://www.morningstar.in')
 time.sleep(10)
 
 
-for i in range(len(name)):
-    print(str(name[i])+" -> "+str(number[i]))
+for i in range(_row-2, len(name)):
+    print("\n\n\n\n"+str(name[i])+" -> "+str(number[i]))
 
     # Search and Enter
     # search_term = str(name[i])
@@ -39,6 +54,7 @@ for i in range(len(name)):
 
     # Extract rating
     rating = driver.find_element(by=By.XPATH, value="//div[contains(@class, 'mds-star-rating__sal mds-star-rating--large__sal')]").get_attribute("aria-label")
+    rating = rating.split(" ")[2]
 
     # Extract the value of price/book
     price_pre_book = driver.find_element(by=By.XPATH, value="(.//ul[@class='small-block-grid-3 large-block-grid-4 sal-component-band-grid']/li)[10]//div[@class='dp-value']").text
@@ -70,14 +86,59 @@ for i in range(len(name)):
 
 
 
-    print('\n\n\n\nrating: ' + rating)
-    print('price_pre_book: '+ price_pre_book)
-    print('price_pre_cash_flow: '+ price_pre_cash_flow)
-    print('price_pre_sales: '+ price_pre_sales)
-    print('price_pre_earnings: '+ price_pre_earnings)
-    print('ebitda: '+ ebitda)
-    print('fair_value: '+ fair_value)
-    print('total_yield_of_ttm: '+ total_yield_of_ttm)
+    # write to excel
+    xfile = openpyxl.load_workbook(filename=_file_name, read_only=False, keep_vba=True)
+    sheet = xfile[_sheet_name]
+
+    # write fair value
+    sheet.cell(row=_row, column=16).font = Font(size=14)
+    sheet.cell(row=_row, column=16).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=16).value = fair_value
+    # write total yield of TTM
+    sheet.cell(row=_row, column=17).font = Font(size=14)
+    sheet.cell(row=_row, column=17).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=17).value = total_yield_of_ttm
+    # write rating
+    sheet.cell(row=_row, column=18).font = Font(size=14)
+    sheet.cell(row=_row, column=18).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=18).value = rating
+    # write price/book
+    sheet.cell(row=_row, column=19).font = Font(size=14)
+    sheet.cell(row=_row, column=19).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=19).value = price_pre_book
+    # write price/cash flow
+    sheet.cell(row=_row, column=20).font = Font(size=14)
+    sheet.cell(row=_row, column=20).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=20).value = price_pre_cash_flow
+    # write price/sales
+    sheet.cell(row=_row, column=21).font = Font(size=14)
+    sheet.cell(row=_row, column=21).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=21).value = price_pre_sales
+    # write price/earnings
+    sheet.cell(row=_row, column=22).font = Font(size=14)
+    sheet.cell(row=_row, column=22).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=22).value = price_pre_earnings
+    # write EABDTA
+    sheet.cell(row=_row, column=23).font = Font(size=14)
+    sheet.cell(row=_row, column=23).alignment = Alignment(vertical='center')
+    sheet.cell(row=_row, column=23).value = ebitda
+
+    xfile.save(_file_name)
+
+    _row += 1
+    lines[2] = str(_row)
+    with open("parameters.txt", "w") as file:
+        file.writelines(lines)
+
+
+    print('rating-> ' + rating)
+    print('price_pre_book-> '+ price_pre_book)
+    print('price_pre_cash_flow-> '+ price_pre_cash_flow)
+    print('price_pre_sales-> '+ price_pre_sales)
+    print('price_pre_earnings-> '+ price_pre_earnings)
+    print('ebitda-> '+ ebitda)
+    print('fair_value-> '+ fair_value)
+    print('total_yield_of_ttm-> '+ total_yield_of_ttm)
     print('\n\n\n\n')
 
 

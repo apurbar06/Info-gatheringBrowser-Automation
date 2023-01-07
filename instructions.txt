@@ -1,0 +1,2 @@
+-> Will work for excel file with extention .xlsm, .xlsx
+-> The file should not be opend while the programm is running
