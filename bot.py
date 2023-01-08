@@ -10,6 +10,11 @@ import time
 import pandas as pd
 import openpyxl
 from openpyxl.styles import Font, Alignment
+from tqdm import tqdm
+from time import sleep
+
+
+
 
 
 # read parameters from file
@@ -38,7 +43,8 @@ driver.get('https://www.morningstar.in')
 time.sleep(10)
 
 
-for i in range(_row-2, len(name)):
+# for i in range(_row-2, len(name)):
+for i in tqdm(range(0, len(name)), initial = _row-2, desc ="Progress: "):
     print("\n\n\n\n"+str(name[i])+" -> "+str(number[i]))
 
     # Search and Enter
