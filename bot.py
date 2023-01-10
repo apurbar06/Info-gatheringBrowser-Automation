@@ -47,7 +47,7 @@ print()
 for i in tqdm(range(0, len(name)), initial = _row-2, desc ="Progress: "):
     if(_row-2>=len(name)): 
         break
-    # print("\n\n\n\n"+str(name[_row-2])+" -> "+str(number[_row-2]))
+    print("\n\n\n\n"+str(name[_row-2])+" -> "+str(number[_row-2]))
     
     
 
@@ -134,14 +134,14 @@ for i in tqdm(range(0, len(name)), initial = _row-2, desc ="Progress: "):
         file.writelines(lines)
 
 
-    # print('rating-> ' + rating)
-    # print('price_pre_book-> '+ price_pre_book)
-    # print('price_pre_cash_flow-> '+ price_pre_cash_flow)
-    # print('price_pre_sales-> '+ price_pre_sales)
-    # print('price_pre_earnings-> '+ price_pre_earnings)
-    # print('ebitda-> '+ ebitda)
-    # print('fair_value-> '+ fair_value)
-    # print('total_yield_of_ttm-> '+ total_yield_of_ttm)
-    # print('\n\n\n\n')
+    print('rating-> ' + rating)
+    print('price_pre_book-> '+ price_pre_book)
+    print('price_pre_cash_flow-> '+ price_pre_cash_flow)
+    print('price_pre_sales-> '+ price_pre_sales)
+    print('price_pre_earnings-> '+ price_pre_earnings)
+    print('ebitda-> '+ ebitda)
+    print('fair_value-> '+ fair_value)
+    print('total_yield_of_ttm-> '+ total_yield_of_ttm)
+    print('\n\n\n\n')
 
 

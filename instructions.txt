@@ -1,2 +1,6 @@
 -> Will work for excel file with extention .xlsm, .xlsx
--> The file should not be opend while the programm is running
+-> The excel file should not be opend while the programm is running
+-> Inputs should be provided in parameters.txt file
+    1. First line is for the name of the excel file with extention. For example: Order Placement.xlsm
+    2. Second line is for the sheet name. For example: 11-12-2022
+    3. Third line is for starting row number from where you want to start. For example: 12

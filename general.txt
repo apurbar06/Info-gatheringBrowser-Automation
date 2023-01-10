@@ -1,0 +1,481 @@
+.\env\Scripts\activate
+python bot.py
+
+
+To create .exe file
+    pip install pyinstaller
+    pyinstaller --onefile bot.py
+
+
+
+
+
+
+
+
+
+
+
+Progress:  73%|██████████████████████████████████████████████████████████████████████████████████                              | 148/202 [00:00<?, ?it/s]
+
+
+
+SOBHA LIMITED -> 532784
+rating-> 4
+price_pre_book-> 2.28
+price_pre_cash_flow-> 4.52
+price_pre_sales-> 2.08
+price_pre_earnings-> 83.33
+ebitda-> 4,463.63
+fair_value-> 717.74
+total_yield_of_ttm-> 0.51
+
+
+
+
+
+Progress:  74%|███████████████████████████████████████████████████████████████████████████▏                          | 149/202 [01:33<1:22:56, 93.90s/it] 
+
+
+
+HINDUSTAN UNILEVER LTD -> 500696
+rating-> 2
+price_pre_book-> 12.21
+price_pre_cash_flow-> 60.98
+price_pre_sales-> 10.70
+price_pre_earnings-> 62.89
+ebitda-> 130.86
+fair_value-> 2,349.18
+total_yield_of_ttm-> 1.40
+
+
+
+
+
+Progress:  74%|███████████████████████████████████████████████████████████████████████████▋                          | 150/202 [03:02<1:18:55, 91.07s/it] 
+
+
+
+HOUSING DEVELOPMENT FINANCE CORPORATION -> 500010
+rating-> 3
+price_pre_book-> 2.57
+price_pre_cash_flow-> —
+price_pre_sales-> 4.61
+price_pre_earnings-> 19.65
+ebitda-> —
+fair_value-> 2,884.75
+total_yield_of_ttm-> 1.16
+
+
+
+
+
+Progress:  75%|████████████████████████████████████████████████████████████████████████████▏                         | 151/202 [04:32<1:16:44, 90.29s/it] 
+
+
+
+GULF OIL LUBRICANTS INDIA LIMITED -> 538567
+rating-> 3
+price_pre_book-> 2.04
+price_pre_cash_flow-> 21.55
+price_pre_sales-> 0.80
+price_pre_earnings-> 9.33
+ebitda-> 3.23
+fair_value-> 499.59
+total_yield_of_ttm-> 5.22
+
+
+
+
+
+Progress:  75%|████████████████████████████████████████████████████████████████████████████▊                         | 152/202 [05:59<1:14:11, 89.04s/it] 
+
+
+
+HINDUSTAN UNILEVER LTD -> 500696
+rating-> 2
+price_pre_book-> 12.21
+price_pre_cash_flow-> 60.98
+price_pre_sales-> 10.70
+price_pre_earnings-> 62.89
+ebitda-> 130.86
+fair_value-> 2,349.18
+total_yield_of_ttm-> 1.40
+
+
+
+
+
+Progress:  76%|█████████████████████████████████████████████████████████████████████████████▎                        | 153/202 [07:26<1:12:14, 88.45s/it] 
+
+
+
+SOBHA LIMITED -> 532784
+rating-> 4
+price_pre_book-> 2.28
+price_pre_cash_flow-> 4.52
+price_pre_sales-> 2.08
+price_pre_earnings-> 83.33
+ebitda-> 4,463.63
+fair_value-> 717.74
+total_yield_of_ttm-> 0.51
+
+
+
+
+
+Progress:  76%|█████████████████████████████████████████████████████████████████████████████▊                        | 154/202 [08:58<1:11:31, 89.40s/it] 
+
+
+
+GULF OIL LUBRICANTS INDIA LIMITED -> 538567
+rating-> 3
+price_pre_book-> 2.04
+price_pre_cash_flow-> 21.55
+price_pre_sales-> 0.80
+price_pre_earnings-> 9.33
+ebitda-> 3.23
+fair_value-> 499.59
+total_yield_of_ttm-> 5.22
+
+
+
+
+
+Progress:  77%|██████████████████████████████████████████████████████████████████████████████▎                       | 155/202 [10:27<1:10:06, 89.50s/it] 
+
+
+
+HOUSING DEVELOPMENT FINANCE CORPORATION -> 500010
+rating-> 3
+price_pre_book-> 2.57
+price_pre_cash_flow-> —
+price_pre_sales-> 4.61
+price_pre_earnings-> 19.65
+ebitda-> —
+fair_value-> 2,884.75
+total_yield_of_ttm-> 1.16
+
+
+
+
+
+Progress:  77%|██████████████████████████████████████████████████████████████████████████████▊                       | 156/202 [12:00<1:09:27, 90.59s/it] 
+
+
+
+CCL PRODUCTS (INDIA) LIMITED -> 519600
+rating-> 3
+price_pre_book-> 5.14
+price_pre_cash_flow-> 175.44
+price_pre_sales-> 3.80
+price_pre_earnings-> 21.98
+ebitda-> 3.32
+fair_value-> 519.06
+total_yield_of_ttm-> 0.96
+
+
+
+
+
+Progress:  78%|███████████████████████████████████████████████████████████████████████████████▎                      | 157/202 [13:30<1:07:39, 90.22s/it] 
+
+
+
+BATA INDIA LTD -> 500043
+rating-> 3
+price_pre_book-> 16.21
+price_pre_cash_flow-> 44.25
+price_pre_sales-> 6.36
+price_pre_earnings-> 67.57
+ebitda-> 4,744.84
+fair_value-> 1,556.85
+total_yield_of_ttm-> 0.25
+
+
+
+
+
+Progress:  78%|███████████████████████████████████████████████████████████████████████████████▊                      | 158/202 [14:58<1:05:50, 89.78s/it] 
+
+
+
+SOBHA LIMITED -> 532784
+rating-> 4
+price_pre_book-> 2.28
+price_pre_cash_flow-> 4.52
+price_pre_sales-> 2.08
+price_pre_earnings-> 83.33
+ebitda-> 4,463.63
+fair_value-> 717.74
+total_yield_of_ttm-> 0.51
+
+
+
+
+
+Progress:  79%|████████████████████████████████████████████████████████████████████████████████▎                     | 159/202 [16:30<1:04:43, 90.32s/it] 
+
+
+
+HINDUSTAN UNILEVER LTD -> 500696
+rating-> 2
+price_pre_book-> 12.21
+price_pre_cash_flow-> 60.98
+price_pre_sales-> 10.70
+price_pre_earnings-> 62.89
+ebitda-> 130.86
+fair_value-> 2,349.18
+total_yield_of_ttm-> 1.40
+
+
+
+
+
+Progress:  79%|████████████████████████████████████████████████████████████████████████████████▊                     | 160/202 [18:00<1:03:03, 90.09s/it] 
+
+
+
+HOUSING DEVELOPMENT FINANCE CORPORATION -> 500010
+rating-> 3
+price_pre_book-> 2.57
+price_pre_cash_flow-> —
+price_pre_sales-> 4.61
+price_pre_earnings-> 19.65
+ebitda-> —
+fair_value-> 2,884.75
+total_yield_of_ttm-> 1.16
+
+
+
+
+
+Progress:  80%|█████████████████████████████████████████████████████████████████████████████████▎                    | 161/202 [19:27<1:01:06, 89.43s/it] 
+
+
+
+AARTI INDUSTRIES LIMITED -> 524208
+rating-> 3
+price_pre_book-> 4.63
+price_pre_cash_flow-> 19.84
+price_pre_sales-> 3.19
+price_pre_earnings-> 17.36
+ebitda-> 19.21
+fair_value-> 689.97
+total_yield_of_ttm-> 0.42
+
+
+
+
+
+Progress:  80%|█████████████████████████████████████████████████████████████████████████████████▊                    | 162/202 [21:00<1:00:14, 90.36s/it]
+
+
+
+HINDUSTAN UNILEVER LTD -> 500696
+rating-> 2
+price_pre_book-> 12.21
+price_pre_cash_flow-> 60.98
+price_pre_sales-> 10.70
+price_pre_earnings-> 62.89
+ebitda-> 130.86
+fair_value-> 2,349.18
+total_yield_of_ttm-> 1.40
+
+
+
+
+
+Progress:  81%|███████████████████████████████████████████████████████████████████████████████████▉                    | 163/202 [22:27<58:10, 89.50s/it] 
+
+
+
+HOUSING DEVELOPMENT FINANCE CORPORATION -> 500010
+rating-> 3
+price_pre_book-> 2.57
+price_pre_cash_flow-> —
+price_pre_sales-> 4.61
+price_pre_earnings-> 19.65
+ebitda-> —
+fair_value-> 2,884.75
+total_yield_of_ttm-> 1.16
+
+
+
+
+
+Progress:  81%|████████████████████████████████████████████████████████████████████████████████████▍                   | 164/202 [23:57<56:35, 89.37s/it] 
+
+
+
+SBI CARDS AND PAYMENT SERVICES LTD -> 543066
+rating-> 3
+price_pre_book-> 8.21
+price_pre_cash_flow-> —
+price_pre_sales-> 7.50
+price_pre_earnings-> 34.72
+ebitda-> —
+fair_value-> 834.88
+total_yield_of_ttm-> 0.32
+
+
+
+
+
+Progress:  82%|████████████████████████████████████████████████████████████████████████████████████▉                   | 165/202 [25:26<55:04, 89.30s/it] 
+
+
+
+GULF OIL LUBRICANTS INDIA LIMITED -> 538567
+rating-> 3
+price_pre_book-> 2.04
+price_pre_cash_flow-> 21.55
+price_pre_sales-> 0.80
+price_pre_earnings-> 9.33
+ebitda-> 3.23
+fair_value-> 499.59
+total_yield_of_ttm-> 5.22
+
+
+
+
+
+Progress:  82%|█████████████████████████████████████████████████████████████████████████████████████▍                  | 166/202 [26:52<53:05, 88.48s/it] 
+
+
+
+AARTI INDUSTRIES LIMITED -> 524208
+rating-> 3
+price_pre_book-> 4.63
+price_pre_cash_flow-> 19.84
+price_pre_sales-> 3.19
+price_pre_earnings-> 17.36
+ebitda-> 19.21
+fair_value-> 689.97
+total_yield_of_ttm-> 0.42
+
+
+
+
+
+Progress:  83%|█████████████████████████████████████████████████████████████████████████████████████▉                  | 167/202 [28:19<51:20, 88.00s/it] 
+
+
+
+TATA STEEL  LTD -> 500470
+rating-> 4
+price_pre_book-> 1.31
+price_pre_cash_flow-> 4.25
+price_pre_sales-> 0.56
+price_pre_earnings-> 4.92
+ebitda-> 647.90
+fair_value-> 140.24
+total_yield_of_ttm-> 4.41
+
+
+
+
+
+Progress:  83%|██████████████████████████████████████████████████████████████████████████████████████▍                 | 168/202 [29:48<50:04, 88.37s/it] 
+
+
+
+HINDUSTAN UNILEVER LTD -> 500696
+rating-> 2
+price_pre_book-> 12.21
+price_pre_cash_flow-> 60.98
+price_pre_sales-> 10.70
+price_pre_earnings-> 62.89
+ebitda-> 130.86
+fair_value-> 2,349.18
+total_yield_of_ttm-> 1.40
+
+
+
+
+
+Progress:  84%|███████████████████████████████████████████████████████████████████████████████████████                 | 169/202 [31:16<48:26, 88.08s/it] 
+
+
+
+HOUSING DEVELOPMENT FINANCE CORPORATION -> 500010
+rating-> 3
+price_pre_book-> 2.57
+price_pre_cash_flow-> —
+price_pre_sales-> 4.61
+price_pre_earnings-> 19.65
+ebitda-> —
+fair_value-> 2,884.75
+total_yield_of_ttm-> 1.16
+
+
+
+
+
+Progress:  84%|███████████████████████████████████████████████████████████████████████████████████████▌                | 170/202 [32:46<47:21, 88.79s/it] 
+
+
+
+SOBHA LIMITED -> 532784
+rating-> 4
+price_pre_book-> 2.28
+price_pre_cash_flow-> 4.52
+price_pre_sales-> 2.08
+price_pre_earnings-> 83.33
+ebitda-> —
+fair_value-> 717.74
+total_yield_of_ttm-> 0.51
+
+
+
+
+
+Progress:  85%|████████████████████████████████████████████████████████████████████████████████████████                | 171/202 [34:13<45:29, 88.05s/it] 
+
+
+
+CCL PRODUCTS (INDIA) LIMITED -> 519600
+rating-> 3
+price_pre_book-> 5.14
+price_pre_cash_flow-> 175.44
+price_pre_sales-> 3.80
+price_pre_earnings-> 21.98
+ebitda-> 3.32
+fair_value-> 519.06
+total_yield_of_ttm-> 0.96
+
+
+
+
+
+Progress:  85%|████████████████████████████████████████████████████████████████████████████████████████▌               | 172/202 [35:41<44:03, 88.12s/it] 
+
+
+
+BATA INDIA LTD -> 500043
+rating-> 3
+price_pre_book-> 16.21
+price_pre_cash_flow-> 44.25
+price_pre_sales-> 6.36
+price_pre_earnings-> 67.57
+ebitda-> 4,744.84
+fair_value-> 1,556.85
+total_yield_of_ttm-> 0.25
+
+
+
+
+
+Progress:  86%|█████████████████████████████████████████████████████████████████████████████████████████               | 173/202 [37:11<42:51, 88.66s/it] 
+
+
+
+SOBHA LIMITED -> 532784
+rating-> 4
+price_pre_book-> 2.28
+price_pre_cash_flow-> 4.52
+price_pre_sales-> 2.08
+price_pre_earnings-> 83.33
+ebitda-> —
+fair_value-> 717.74
+total_yield_of_ttm-> 0.51
